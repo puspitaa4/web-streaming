@@ -1,0 +1,119 @@
+/* File: style.css */
+
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styling */
+.navbar {
+    background: linear-gradient(to right, #e52d27, #b31217);
+    color: white;
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107;
+}
+
+/* Footer styling */
+footer {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    font-size: 14px;
+}
+
+/* Categories page styling */
+.card {
+    border: none;
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #888;
+}
+
+.card img {
+    border: 2px solid #eee;
+    transition: border 0.3s;
+}
+
+.card img:hover {
+    border: 2px solid #b31217;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #b31217;
+    text-align: center;
+}
+
+.container .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #b31217;
+    border-color: #b31217;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #e52d27;
+    border-color: #e52d27;
+}
+
+/* Search Bar */
+.navbar input[type="search"] {
+    border-radius: 20px;
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    width: 250px;
+}
+
+/* Sidebar */
+.sidebar {
+    background: linear-gradient(to bottom, #e52d27, #b31217);
+    height: 100%;
+    color: white;
+}
+
+.sidebar .nav-link {
+    color: #fff;
+}
+
+.sidebar .nav-link:hover {
+    background: #b31217;
+    color: #ffc107;
+}

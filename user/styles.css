@@ -1,0 +1,112 @@
+/* CSS untuk umum */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #007BFF; /* Warna biru berbeda untuk sidebar */
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px; /* Optional: Space below the sidebar header */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+    position: relative; /* Add relative positioning for images */
+}
+
+.sidebar ul li a img {
+    width: 20px; /* Gambar kecil di samping teks */
+    height: 20px;
+    margin-right: 10px; /* Memberikan jarak antara gambar dan teks */
+    vertical-align: middle; /* Menjaga gambar tetap sejajar dengan teks */
+}
+
+.sidebar ul li a:hover {
+    background-color: #0056b3;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.profile-info {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Adds rounded corners to the profile box */
+}
+
+.profile-info label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold; /* Makes labels bold */
+}
+
+.profile-info input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+.profile-info button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px; /* Larger font for the button */
+}
+
+.profile-info button:hover {
+    background-color: #45a049;
+}
+
+/* CSS untuk header bagian atas */
+.header {
+    background-color: blue;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px; /* Menambahkan jarak antara header dan sidebar */
+}
+
+.header h2 {
+    font-size: 48px;
+    margin: 0;
+}
+
+/* Center text section */
+.center-text {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin: 10px 0;
+}

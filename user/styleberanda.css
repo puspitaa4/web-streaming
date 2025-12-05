@@ -1,0 +1,264 @@
+body {
+    background-color: #282828;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.navbar {
+    background-color:rgb(41, 43, 187);
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: gold;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 70px;
+  cursor: pointer;
+  width: 50px;
+  height: 0px;
+  outline: none;
+  border-style: none;
+  border-radius: 50%;
+  pointer-events: painted;
+  background-color: transparent;
+  transition: .2s linear;
+}
+
+.menu-icon {
+    border: none;
+    background: transparent;
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 10px;
+    margin-right: 0;
+    border-radius: 5px;
+}
+
+.menu-icon:hover {
+    color: rgb(0, 0, 0);
+}
+
+.btn-outline-danger {
+    color: white;
+    border-color: #ff4444;
+    margin: 1px;
+}
+
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color:rgb(149, 177, 238);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 999;
+}
+
+.side-menu a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+
+.a{
+    border: 1px solid black;
+    width: 100px;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color:rgb(60, 43, 192);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+    color: #fff;
+    border: none;
+    background: none;
+}
+
+.close-btn:hover {
+    color: rgb(0, 0, 0);
+}
+
+.container {
+    width: 100%;
+    margin-top: 1rem;
+
+}
+
+.carousel-inner {
+    overflow: hidden; /* Pastikan gambar tidak meluber */
+    position: relative;
+}
+
+.carousel-item {
+    position: relative;
+    }
+.carousel-item img {
+    margin-left: 35px;
+    object-fit: cover;
+    border-radius: 8px;
+    width: 94.5%;
+    height: 350px;
+    filter: brightness(0.4);
+}
+.carousel-caption {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    left: 5%;
+    color: #fff;
+    text-align: left;
+}
+.carousel-caption h3 {
+    font-size: 2.5rem;
+    margin-left: 30px;
+    font-weight: bold;
+}
+.carousel-caption p {
+  font-size: 1.2rem;
+  margin-left: 30px;
+}
+.badge {
+  margin-right: 5px;
+}
+.btn-custom {
+  background-color: #ff3838;
+  color: #fff;
+  margin-left: 30px;
+  font-weight: bold;
+  border: none;
+}
+.btn-custom:hover {
+  background-color: #e32e2e;
+}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg); /* Membentuk belah ketupat */
+    width: 50px; /* Lebar tombol */
+    height: 50px; /* Tinggi tombol */
+    background-color: rgba(0, 0, 0);
+    opacity: 1;
+    z-index: 2;
+    border: 2px solid #fff; /* Tambahkan border putih untuk gaya */
+}
+
+.carousel-control-prev span,
+.carousel-control-next span {
+    transform: translate(-50%, -50%) rotate(-45deg); /* Balik ikon ke arah semula */
+    font-size: 18px;
+    color: #fff;
+    background-color: rgba(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.carousel-control-prev {
+    left: 10px; /* Posisikan tombol di sebelah kiri */
+}
+
+.carousel-control-next {
+    right: 10px; /* Posisikan tombol di sebelah kanan */
+}
+
+
+
+.view{
+    text-decoration: none;
+}
+
+.cont {
+    width: 94.5%;
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-color: transparent transparent;
+    scroll-snap-type: x mandatory;
+    gap: 1px;
+}
+
+.ss {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 11/16;
+    position: relative;
+    background-color: black;
+    overflow: hidden;
+    z-index: 1;
+    margin-right: 0;
+    border-radius: 1rem;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 500ms;
+    background-color:rgb(0, 0, 0, 0.769);
+    border-radius: 1rem;
+}
+.ss:hover .overlay{
+    opacity: 0.7;
+}
+.ss img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+
+.ss figcaption {
+    position: absolute;
+    bottom: -10rem;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.769);
+    padding: 1rem 0;
+    color: #fff;
+    width: 100%;
+    height: 65px;
+    text-align: center;
+    transition: all 500ms;
+}
+.ss:hover figcaption{
+    bottom: 0;
+}
+
+.ss-body {
+    text-align: center;
+}
